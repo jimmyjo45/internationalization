@@ -29,6 +29,14 @@
             "scripts": []
           },
           "configurations": {
+            "es": {
+              "aot": true,
+              "outputPath": "dist/under-construction-es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "internationalization:build:production"
+            },
+            "es": {
+              "browserTarget": "internationalization:build:es"
             }
           }
         },
